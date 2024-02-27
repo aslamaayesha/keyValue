@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Key-Value Store</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <label for="key">Key:</label>
+  <input type="text" id="key" onkeyup="lookupValue()">
+  <label for="value">Value:</label>
+  <input type="text" id="value">
+  <button onclick="storeKeyValue()">Store</button>
+  <button onclick="printTable()">Print Table</button>
+  <button onclick="clearTable()">Clear Table</button>
+  <table id="table"></table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
